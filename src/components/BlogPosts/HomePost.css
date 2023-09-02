@@ -1,0 +1,49 @@
+#homepost-main {
+  padding: 0;
+  width: 72%;
+}
+.post-images {
+  width: 100%;
+  max-height: 180px;
+  object-fit: fill;
+}
+
+.row {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.col-template:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.home-post-card-body h5 {
+  font-size: 1.2rem;
+
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.home-post-card-body p {
+  font-size: 1.2rem;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 769px) {
+  #homepost-main {
+    width: 90%;
+  }
+  .col-template {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .post-images {
+    max-height: 300px;
+    width: 100%;
+
+    padding: 0;
+  }
+}

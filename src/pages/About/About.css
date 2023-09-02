@@ -1,0 +1,79 @@
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+h5 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.about-us-section-content {
+  font-size: 1.5rem;
+}
+.about-content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+.main-about-div {
+  background-image: url("../../../public/images/about-bg.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.section-abouts {
+  width: 70%;
+  margin: auto;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.about-footer {
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 769px) {
+  .about-content-div {
+    width: 90%;
+    height: 100%;
+  }
+  .section-abouts {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .about-content-div {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .section-abouts {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  h5 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .about-us-section-content {
+    font-size: 0.8rem;
+  }
+  .about-us-button {
+    font-size: 0.8rem;
+  }
+}
