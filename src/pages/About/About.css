@@ -23,6 +23,7 @@ h5 {
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+  min-height: 100vh;
 }
 
 .section-abouts {
@@ -36,6 +37,7 @@ h5 {
   margin: auto;
 }
 .about-footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 50px;
