@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
 
 import Contact from "./pages/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   const blogPosts = [
@@ -466,58 +465,88 @@ function App() {
       id: 7,
       title: "The Art of Cooking Pasta",
       subHeading: "Exploring Pasta Dishes from Around the World",
-      description: "An in-depth look at the world of pasta and its delicious varieties.",
+      description:
+        "An in-depth look at the world of pasta and its delicious varieties.",
       content: (
         <div>
           <h1>The Art of Cooking Pasta</h1>
           <p>
-            Pasta is a culinary marvel enjoyed by people worldwide. In this blog post, we delve into the world of pasta, exploring its history, regional varieties, and some mouthwatering recipes.
+            Pasta is a culinary marvel enjoyed by people worldwide. In this blog
+            post, we delve into the world of pasta, exploring its history,
+            regional varieties, and some mouthwatering recipes.
           </p>
           <h2>History of Pasta</h2>
           <p>
-            Pasta has a rich history dating back centuries. It originated in China and gradually spread to Europe. Learn about the evolution of pasta from its early forms to the diverse range of shapes we know today.
+            Pasta has a rich history dating back centuries. It originated in
+            China and gradually spread to Europe. Learn about the evolution of
+            pasta from its early forms to the diverse range of shapes we know
+            today.
           </p>
           <h2>Regional Pasta Varieties</h2>
           <p>
-            Every corner of the world has its own unique pasta dishes. Explore Italian classics like spaghetti carbonara and discover lesser-known gems like Japanese ramen and Thai pad thai. We'll take you on a culinary journey around the globe.
+            Every corner of the world has its own unique pasta dishes. Explore
+            Italian classics like spaghetti carbonara and discover lesser-known
+            gems like Japanese ramen and Thai pad thai. We'll take you on a
+            culinary journey around the globe.
           </p>
           <h2>Delicious Pasta Recipes</h2>
           <p>
-            No discussion of pasta is complete without indulging in some delectable recipes. We'll share step-by-step instructions for making perfect pasta dishes at home, from creamy Alfredo to spicy Arrabbiata.
+            No discussion of pasta is complete without indulging in some
+            delectable recipes. We'll share step-by-step instructions for making
+            perfect pasta dishes at home, from creamy Alfredo to spicy
+            Arrabbiata.
           </p>
           <h2>The Perfect Pasta Pairings</h2>
           <p>
-            Pairing pasta with the right sauce and wine can elevate your dining experience. Learn how to match pasta shapes with sauces and discover the ideal wine to complement your favorite pasta dish.
+            Pairing pasta with the right sauce and wine can elevate your dining
+            experience. Learn how to match pasta shapes with sauces and discover
+            the ideal wine to complement your favorite pasta dish.
           </p>
         </div>
       ),
       img: "id7.jpg",
-    },{
+    },
+    {
       id: 8,
       title: "The Marvelous Wonders of Space",
       subHeading: "A Journey Through the Universe",
-      description: "Discover the fascinating mysteries of our universe and beyond.",
+      description:
+        "Discover the fascinating mysteries of our universe and beyond.",
       content: (
         <div>
           <h1>The Marvelous Wonders of Space</h1>
           <p>
-            Space, the final frontier! Join us on an awe-inspiring journey through the cosmos as we explore distant galaxies, black holes, and the search for extraterrestrial life.
+            Space, the final frontier! Join us on an awe-inspiring journey
+            through the cosmos as we explore distant galaxies, black holes, and
+            the search for extraterrestrial life.
           </p>
           <h2>Exploring the Cosmos</h2>
           <p>
-            The universe is vast and full of wonders. In this post, we'll take you on a guided tour of space exploration, from the early days of stargazing to modern space missions. Discover how telescopes, rovers, and spacecraft have expanded our knowledge of the cosmos.
+            The universe is vast and full of wonders. In this post, we'll take
+            you on a guided tour of space exploration, from the early days of
+            stargazing to modern space missions. Discover how telescopes,
+            rovers, and spacecraft have expanded our knowledge of the cosmos.
           </p>
           <h2>Mysteries of the Universe</h2>
           <p>
-            Space is filled with mysteries. Learn about the enigmatic dark matter and dark energy that make up most of the universe. Explore the mind-bending concept of black holes and the fascinating phenomena surrounding them.
+            Space is filled with mysteries. Learn about the enigmatic dark
+            matter and dark energy that make up most of the universe. Explore
+            the mind-bending concept of black holes and the fascinating
+            phenomena surrounding them.
           </p>
           <h2>The Search for Extraterrestrial Life</h2>
           <p>
-            Are we alone in the universe? Dive into the quest to find extraterrestrial life, from the Mars rovers to the search for exoplanets with conditions suitable for life. We'll discuss the possibility of contact with intelligent civilizations.
+            Are we alone in the universe? Dive into the quest to find
+            extraterrestrial life, from the Mars rovers to the search for
+            exoplanets with conditions suitable for life. We'll discuss the
+            possibility of contact with intelligent civilizations.
           </p>
           <h2>The Future of Space Exploration</h2>
           <p>
-            What lies ahead in the world of space exploration? Find out about upcoming missions to the Moon, Mars, and beyond. Learn how private companies are shaping the future of space travel and the potential for human colonization of other planets.
+            What lies ahead in the world of space exploration? Find out about
+            upcoming missions to the Moon, Mars, and beyond. Learn how private
+            companies are shaping the future of space travel and the potential
+            for human colonization of other planets.
           </p>
         </div>
       ),
@@ -527,56 +556,54 @@ function App() {
       id: 9,
       title: "The Power of Reading",
       subHeading: "How Books Can Transform Your Life",
-      description: "Exploring the profound impact of reading on personal growth and development.",
+      description:
+        "Exploring the profound impact of reading on personal growth and development.",
       content: (
         <div>
           <h1>The Power of Reading</h1>
           <p>
-            Reading is more than just a pastime; it's a transformative experience that can shape your mind, broaden your horizons, and enhance your life. In this blog post, we dive into the profound impact of books on personal growth and development.
+            Reading is more than just a pastime; it's a transformative
+            experience that can shape your mind, broaden your horizons, and
+            enhance your life. In this blog post, we dive into the profound
+            impact of books on personal growth and development.
           </p>
           <h2>The Magic of Words</h2>
           <p>
-            Words have the power to transport you to different worlds, evoke emotions, and ignite your imagination. Discover how the written word can influence your thoughts and perspectives.
+            Words have the power to transport you to different worlds, evoke
+            emotions, and ignite your imagination. Discover how the written word
+            can influence your thoughts and perspectives.
           </p>
           <h2>Empathy and Understanding</h2>
           <p>
-            Books allow you to step into the shoes of characters from diverse backgrounds and experiences. Explore how reading fosters empathy, understanding, and the ability to see the world through others' eyes.
+            Books allow you to step into the shoes of characters from diverse
+            backgrounds and experiences. Explore how reading fosters empathy,
+            understanding, and the ability to see the world through others'
+            eyes.
           </p>
           <h2>Lifelong Learning</h2>
           <p>
-            Lifelong learning is a key to personal growth. We'll discuss how books provide a constant source of knowledge and how reading can be a lifelong journey of discovery.
+            Lifelong learning is a key to personal growth. We'll discuss how
+            books provide a constant source of knowledge and how reading can be
+            a lifelong journey of discovery.
           </p>
           <h2>Fueling Creativity</h2>
           <p>
-            Whether you're a writer, artist, or simply someone who loves to brainstorm ideas, reading can fuel your creativity. Learn how exposure to different writing styles and genres can inspire your own creative endeavors.
+            Whether you're a writer, artist, or simply someone who loves to
+            brainstorm ideas, reading can fuel your creativity. Learn how
+            exposure to different writing styles and genres can inspire your own
+            creative endeavors.
           </p>
           <h2>The Reading Habit</h2>
           <p>
-            Cultivating a reading habit is a gift you give to yourself. We'll provide tips on how to make reading a regular part of your life and how to choose books that resonate with you.
+            Cultivating a reading habit is a gift you give to yourself. We'll
+            provide tips on how to make reading a regular part of your life and
+            how to choose books that resonate with you.
           </p>
         </div>
       ),
       img: "id9.jpg",
-    }
-    
-    
-    
+    },
   ];
-  const [blogPostsDB, setBlogPosts] = useState([]);
-
-  useEffect(() => {
-    fetch("/express_backend") // Make a GET request to your Express backend
-      .then((response) => response.json())
-      .then((data) => {
-        setBlogPosts(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching blog posts:", error);
-      });
-  }, []);
-
-  const posts = blogPostsDB;
-  console.log(posts);
 
   return (
     <Router>

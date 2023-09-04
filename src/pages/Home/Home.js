@@ -7,15 +7,6 @@ import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 const Home = (props) => {
   const blogPosts = props.blogPosts;
-  if (props.blogPosts.length === 0) {
-    return (
-      <div className="home-div">
-        <Navbar />
-        <h1 className="text-center">Loading...</h1>
-        <Footer />
-      </div>
-    );
-  }
 
   return (
     <div className="home-div">
