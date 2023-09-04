@@ -1,0 +1,30 @@
+.contact-main-div {
+  background-color: aliceblue;
+  min-height: 100vh;
+}
+
+.contact-form-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  padding: 5%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .contact-form-container {
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contact-form-container {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+}
