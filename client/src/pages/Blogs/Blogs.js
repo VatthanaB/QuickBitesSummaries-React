@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlogPost from "../../components/BlogPosts/BlogPost";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+
 import "./Blogs.css";
 
 const Blogs = (props) => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,6 +8,7 @@ import Blogs from "./pages/Blogs/Blogs";
 
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import axios from "axios";
 
 function App() {
   const blogPosts = [
@@ -463,10 +464,40 @@ function App() {
       img: "id6.jpg",
     },
   ];
+  const [blogPostsdb, setBlogPostsDb] = useState([]);
+
+  useEffect(() => {
+    // Make a GET request to your Node.js API
+    axios
+      .get("http://localhost:3001/api/")
+      .then((response) => {
+        setBlogPostsDb(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
+  const blogPostsList = (
+    <div>
+      <h2>Blog Posts</h2>
+      <ul>
+        {blogPosts.map((post) => (
+          <li key={post.id}>
+            <h3>{post.title}</h3>
+            <p>{post.content}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  console.log(blogPostsdb);
 
   return (
     <Router>
       <Routes>
+        {blogPostsList}
         <Route exact path="/" element={<Home blogPosts={blogPosts} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
