@@ -1,9 +1,9 @@
-h1 {
+.about-content-div h1 {
   text-align: center;
   font-size: 3rem;
   margin: 2rem 0;
 }
-h5 {
+.about-content-div h5 {
   text-align: center;
   font-size: 2.5rem;
   margin: 2rem 0;
@@ -15,14 +15,13 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
-  width: 50%;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
 .main-about-div {
-  background-image: url("../../../public/images/about-bg.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+  background-color: aliceblue;
   min-height: 100vh;
 }
 
@@ -49,7 +48,6 @@ h5 {
 @media screen and (max-width: 769px) {
   .about-content-div {
     width: 90%;
-    height: 100%;
   }
   .section-abouts {
     width: 90%;
@@ -59,18 +57,17 @@ h5 {
 @media screen and (max-width: 426px) {
   .about-content-div {
     min-width: 100%;
-    min-height: 100%;
   }
   .section-abouts {
     width: 100%;
   }
-  h1 {
+  .abous-us-h1 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem !important;
   }
-  h5 {
+  .abous-us-h5 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
   .about-us-section-content {
     font-size: 0.8rem;

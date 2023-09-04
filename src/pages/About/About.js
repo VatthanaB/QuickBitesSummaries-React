@@ -41,7 +41,7 @@ const About = () => {
   const [currentSectionContent, setCurrentSectionContent] = useState(
     <div className="row section-abouts ">
       <div className="col-lg-12 text-center justify-content-center">
-        <h5>{aboutSections[0].title}</h5>
+        <h5 className="abous-us-h5">{aboutSections[0].title}</h5>
         <div />
         <div className="col-lg-12 text-center justify-content-center">
           <p className="about-us-section-content">{aboutSections[0].content}</p>
@@ -58,8 +58,10 @@ const About = () => {
     setCurrentSectionIndex(nextSectionIndex);
     setCurrentSectionContent(
       <div className="row section-abouts ">
-        <div className="col-lg-12 text-center justify-content-center">
-          <h5>{aboutSections[nextSectionIndex].title}</h5>
+        <div className="col-lg-12 text-center justify-content-center ">
+          <h5 className="abous-us-h5">
+            {aboutSections[nextSectionIndex].title}
+          </h5>
           <div />
           <div className="col-lg-12 text-center justify-content-center">
             <p className="about-us-section-content">
@@ -74,11 +76,9 @@ const About = () => {
   return (
     <div className="main-about-div">
       <Navbar />
-      <div className="about-content-div">
-        <h1 className="justify-content-center">
-          About Us: The Quirky Summarizers!
-        </h1>
-        <div> {currentSectionContent}</div>
+      <div className="about-content-div ">
+        <h1 className="abous-us-h1">About Us: The Quirky Summarizers!</h1>
+        <div>{currentSectionContent}</div>
         <div className="about-button ">
           <button
             onClick={onClickHandler}
@@ -90,7 +90,7 @@ const About = () => {
       </div>
 
       <div className="about-footer">
-        <Footer id="about-footer" />
+        <Footer />
       </div>
     </div>
   );

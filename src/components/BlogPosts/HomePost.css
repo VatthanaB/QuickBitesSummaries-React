@@ -8,11 +8,14 @@
   object-fit: fill;
 }
 
-.row {
+.homepost-row {
   margin: 20px 0;
   padding: 0;
+  height: 100%;
 }
-
+.card-template {
+  height: 100%;
+}
 .col-template:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease-in-out;

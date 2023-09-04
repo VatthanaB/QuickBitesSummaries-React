@@ -9,11 +9,16 @@ export default function MainPost(props) {
   const imageSrc = `./images/PostsImages/id${blogPosts[lastPost].id}.jpg`;
 
   return (
-    <div className="container shadow-lg" id="main-card">
-      <div className="card" id="card-main">
+    <div className="card border-0 shadow-lg main-post-main-div" id="main-card">
+      <div className="card border-0" id="card-main">
         <div className="row m-0">
           <div className="col-lg-7" id="main-img-div">
-            <img id="main-img" src={imageSrc} className=" rounded" alt="..." />
+            <img
+              id="main-img"
+              src={imageSrc}
+              className=" rounded-start"
+              alt="..."
+            />
           </div>
           <div className="col-lg-5 rounded-end">
             <div className="card-body">

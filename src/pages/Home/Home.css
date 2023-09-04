@@ -1,6 +1,4 @@
 .home-div {
-  background-image: url("../../../public/images/home-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: aliceblue;
+  min-height: 100vh;
 }

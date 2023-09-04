@@ -1,8 +1,5 @@
 .contact-main-div {
-  background-image: url("../../../public/images/contact-bg.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
+  background-color: aliceblue;
   min-height: 100vh;
 }
 

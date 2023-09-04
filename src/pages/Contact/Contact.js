@@ -25,7 +25,6 @@ export default function Contact() {
   return (
     <div className="contact-main-div">
       <Navbar />
-
       <div className="container mt-5 contact-form-container">
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit}>

@@ -1,6 +1,3 @@
 .blogs-main {
-  background-image: url("../../../public/images/blogs-bg.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center;
+  background-color: aliceblue;
 }

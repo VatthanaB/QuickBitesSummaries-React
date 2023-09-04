@@ -8,11 +8,8 @@
   font-size: 1.5rem;
   margin: 5px 0 10px 0;
 }
-.card {
-  padding: 0;
-}
 
-#main-card {
+.main-post-main-div {
   width: 70%;
   margin: 50px auto 0 auto;
   padding: 0;
@@ -42,11 +39,11 @@
 }
 
 @media screen and (max-width: 769px) {
-  #main-card {
-    width: 90%;
+  .main-post-main-div {
+    width: 90% !important;
   }
   #main-img-div {
-    max-height: 300px;
+    height: 300px;
     width: 100%;
 
     padding: 0;
